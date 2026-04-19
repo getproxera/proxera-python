@@ -15,7 +15,7 @@ class ProxeraConfig:
             Falls back to the ``PROXERA_API_KEY`` environment variable.
         base_url: Base URL of the Proxera API.
             Falls back to ``PROXERA_BASE_URL``, defaulting to
-            ``https://api.proxera.dev/v1``.
+            ``https://api.getproxera.com/v1``.
         timeout: Request timeout in seconds.
         max_retries: Maximum number of retries on transient errors.
         tags: Optional list of tags sent via the ``X-Proxera-Tags`` header.
@@ -36,7 +36,7 @@ class ProxeraConfig:
             self.api_key = os.environ.get("PROXERA_API_KEY", "")
         if not self.base_url:
             self.base_url = os.environ.get(
-                "PROXERA_BASE_URL", "https://api.proxera.dev/v1"
+                "PROXERA_BASE_URL", "https://api.getproxera.com/v1"
             )
         if not self.api_key:
             raise ValueError(

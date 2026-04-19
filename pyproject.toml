@@ -28,9 +28,9 @@ dependencies = ["openai>=1.0"]
 dev = ["pytest", "ruff"]
 
 [project.urls]
-Homepage = "https://proxera.dev"
-Documentation = "https://docs.proxera.dev"
-Repository = "https://github.com/proxera/proxera"
+Homepage = "https://getproxera.com"
+Documentation = "https://docs.getproxera.com"
+Repository = "https://github.com/getproxera/proxera-python"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/proxera"]

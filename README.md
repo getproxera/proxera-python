@@ -1,6 +1,6 @@
 # Proxera Python Client
 
-Drop-in replacement for the OpenAI Python SDK that routes all requests through [Proxera](https://proxera.dev) — giving you logging, cost tracking, rate-limit management, and provider failover with zero code changes.
+Drop-in replacement for the OpenAI Python SDK that routes all requests through [Proxera](https://getproxera.com) — giving you logging, cost tracking, rate-limit management, and provider failover with zero code changes.
 
 ## Install
 
@@ -28,7 +28,7 @@ That's it. Every call goes through Proxera's proxy and shows up in your dashboar
 | Parameter | Env Variable | Default |
 |-----------|-------------|---------|
 | `proxera_key` | `PROXERA_API_KEY` | *(required)* |
-| `base_url` | `PROXERA_BASE_URL` | `https://api.proxera.dev/v1` |
+| `base_url` | `PROXERA_BASE_URL` | `https://api.getproxera.com/v1` |
 
 ### Constructor arguments
 
@@ -71,7 +71,7 @@ import proxera
 llm = ChatOpenAI(
     model="gpt-4o",
     openai_api_key="px-live_...",
-    openai_api_base="https://api.proxera.dev/v1",
+    openai_api_base="https://api.getproxera.com/v1",
 )
 llm.invoke("Hello!")
 ```
@@ -88,7 +88,7 @@ llm = ChatOpenAI(model="gpt-4o", client=client)
 
 ## Documentation
 
-Full docs at [docs.proxera.dev](https://docs.proxera.dev).
+Full docs at [docs.getproxera.com](https://docs.getproxera.com).
 
 ## License
 
